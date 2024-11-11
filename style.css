@@ -1,0 +1,210 @@
+/* Base Styles */
+html {
+  height: 100%;
+  background: radial-gradient(closest-side at 60% 55%, blue, red, green, yellow, orange, navy, black);
+  font-family: cursive, sans-serif;
+}
+
+#container {
+  width: 750px;
+  height: 600px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#fruit1 {
+  width: 55px;
+  height: 75px;
+}
+
+#timerDisplay {
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+}
+
+#front {
+  font-size: 40px;
+  color: #d3901d;
+  width: 650px;
+  height: 450px;
+  padding: 10px;
+  margin: 30px auto 20px auto;
+  z-index: 2;
+  display: none;
+}
+
+#front img {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#instructions {
+  width: 450px;
+  height: 50px;
+  margin: 10px auto;
+  font-size: 30px;
+  background-color: navy;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 4px #4b4b4e;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#toggleMenuBtn {
+  background: navy;
+  width: 60px;
+  height: 50px;
+  margin: 10px auto;
+  font-size: 30px;
+  background-color: navy;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 4px #4b4b4e;
+  cursor: pointer;
+  display: block;
+}
+
+#fruitcontainer {
+  background: url(images/fruit-ninja-background.jpg);
+  background-size: cover;
+  width: 650px;
+  height: 450px;
+  padding: 10px;
+  margin: 30px auto 20px auto;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-family: cursive, sans-serif;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 4px 0px 0px #4b4b4e;
+  position: relative;
+}
+
+.fruit {
+  display: none;
+  position: absolute;
+}
+
+#score {
+  display: none;
+}
+
+.scoreDisplay {
+  z-index: 1;
+  display: flex;
+  background-color: transparent;
+  color: #ff0000;
+  position: absolute;
+  font-size: 30px;
+  justify-items: center;
+}
+
+#score img {
+  width: 40px;
+  align-items: center;
+  padding-right: 5px;
+}
+
+#trialsleft {
+  margin-top: 7px;
+  display: flex;
+  position: absolute;
+  left: 550px;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.life {
+  width: 30px;
+  padding-right: 5px;
+}
+
+#startReset {
+  position: relative;
+  width: 90px;
+  padding: 10px;
+  margin: 0 auto;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  background-color: navy;
+  box-shadow: 0px 4px 0px 0px #5c5619;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+#startReset:active {
+  background-color: #69620c;
+  box-shadow: 0px 0px #5c5619;
+  top: 4px;
+  color: white;
+}
+
+#gameOver {
+  box-sizing: border-box;
+  width: 500px;
+  height: 300px;
+  background: transparent;
+  color: #d3901d;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3em;
+  position: absolute;
+  top: 170px;
+  left: 150px;
+  z-index: 2;
+}
+
+/* Menu Styles */
+#menuItems {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+}
+
+.menuOption {
+  margin: 10px 0;
+}
+
+#menuItems input {
+  width: 100%;
+}
+
+#to-know {
+  margin-top: 20px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  z-index: 20;
+}
+
+#to-know p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
